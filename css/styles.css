@@ -134,6 +134,14 @@ body {
 	color: var(--first-title-color);
 }
 
+.active {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--accent-color);
+}
+
 .header-link:hover,
 .header-link:focus {
 	color: var(--accent-color);
@@ -335,7 +343,7 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 10px;
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .comand-soc-link {
@@ -434,11 +442,16 @@ body {
 	flex-basis: calc(100% / 3);
 }
 
-.projects-part:hover {
+.projects-part-link {
+	display: block;
+}
+
+.projects-part-link:hover,
+.projects-part-link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.part-border {
+.projects-part-border {
 	border-right: 1px solid #eeeeee;
 	border-left: 1px solid #eeeeee;
 	border-bottom: 1px solid #eeeeee;
@@ -531,7 +544,7 @@ body {
 
 .contacts > .container {
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 }
 
 .contacts-share {
@@ -564,6 +577,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	fill: #ffffff;
 	background-color: rgba(255, 255, 255, 0.1);
 }
