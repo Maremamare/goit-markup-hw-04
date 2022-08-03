@@ -134,13 +134,17 @@ body {
 	color: var(--first-title-color);
 }
 
-.active {
+[aria-current] {
+	color: var(--accent-color);
+}
+
+/* .active {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--accent-color);
-}
+} */
 
 .header-link:hover,
 .header-link:focus {
